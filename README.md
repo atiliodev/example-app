@@ -15,28 +15,6 @@ Um boilerplate moderno para construir aplicações desktop usando **Electron**, 
 
 ---
 
-##  Estrutura do projeto
-
-```
-
-example-app/
-├── src/
-│   ├── main/                 # Código do processo principal (Electron)
-│   └── renderer/             # Frontend da aplicação
-├── .eslintrc.json            # Regras de lint
-├── forge.config.ts           # Configuração do Electron Forge
-├── postcss.config.mjs        # Configuração do PostCSS
-├── tsconfig.json             # Configuração do TypeScript
-├── webpack.main.config.ts    # Webpack para o processo main
-├── webpack.renderer.config.ts# Webpack para o renderer
-├── webpack.plugins.ts        # Plugins comuns do Webpack
-├── package.json              # Dependências e scripts npm
-└── README.md                 # (Este arquivo)
-
-````
-
----
-
 ##  Scripts disponíveis
 
 Use os seguintes comandos para desenvolvimento e produção:
@@ -53,49 +31,24 @@ Esses scripts já estão conectados ao **Electron Forge**, com base nas configur
 
 ## Guia de uso
 
-### 1. Clone o repositório
+### 1. Crie o Projeto 
 
 ```bash
-git clone https://github.com/atiliodev/example-app.git
-cd example-app
+npx create-my-electron-app my-app
+cd my-app
 ```
 
-### 2. Instale as dependências
+### 2. Inicie o app em modo desenvolvimento
 
 ```bash
-npm install
+npm start
 ```
-
-### 3. Inicie o app em modo desenvolvimento
-
-```bash
-npm run start
-```
-
-### 4. Crie builds e instaladores (opcional)
-
-* `npm run package` – gera os builds
-* `npm run make` – cria instaladores para macOS, Windows ou Linux (depende das configurações do Forge)
-
----
 
 ## Pré-requisitos
 
 * **Node.js** versão 18 ou superior
 * npm (incluído com o Node.js)
 
----
-
-## Como contribuir
-
-Contribuições são bem-vindas! Você pode:
-
-* Melhorar a documentação
-* Adicionar suporte a frameworks como React ou Vue no `renderer`
-* Ajustar configurações de build ou empacotamento
-* Sugerir melhorias via *Issues* ou *Pull Requests*
-
----
 
 ## Licença
 
